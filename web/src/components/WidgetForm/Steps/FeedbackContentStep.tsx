@@ -37,14 +37,14 @@ function handleSubmiFeedback(event:FormEvent){
             <header>
                 <button 
                     type="button" 
-                    className="top-5 left-5 text-zinc-400 hover:text-zinc-100"
+                    className="ArrowReturn"
                     onClick={onFeedbackRestartRequested}
                 >
                     <ArrowLeft weight="bold" className="w-4 h-4"/>
 
                 </button>
 
-                <span className="text-xl leading-6 flex items-center gap-2">
+                <span className="FeedbackContent">
                     <img src={feedbackTypeInfo.image.source} alt={feedbackTypeInfo.image.alt} className="w-6 h-6" />
                     {feedbackTypeInfo.title}
                 </span>
@@ -54,9 +54,10 @@ function handleSubmiFeedback(event:FormEvent){
 
             <form onSubmit={handleSubmiFeedback}className="my-4 w-full">
                 <textarea
-                    className="min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 border-zinc-600 
-                    bg-transparent rounded-md focus:border-b-purple-500 focus:ring-purple-500 focus:ring-1 resize-none
+                    className="FeedbackText focus:border-b-purple-500 focus:ring-purple-500 focus:ring-1 resize-none
                     focus: outline-none scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
+
+                    /*O "focus" não é possível jogar em um arquivo só do global.css, pois o tailwind não suporta */
 
                     placeholder="Conte com detalhes o que está acontecendo..."
                     onChange={event => setComment(event.target.value)}
@@ -72,9 +73,8 @@ function handleSubmiFeedback(event:FormEvent){
                     <button
                         disabled={comment.length === 0}
                         type="submit"
-                        className="p-2 bg-purple-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm
-                        hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900
-                        focus:ring-purple-500 transition-colors disabled:opacity-50 disabled:hover:bg-purple-500"
+                        className=" FeedbackSend focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900
+                        focus:ring-purple-500 "
                     >
                         Enviar Feedback
                     </button>

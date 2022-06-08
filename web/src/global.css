@@ -5,3 +5,84 @@
 body{
     @apply bg-[#09090A] text-zinc-100;
 }
+
+.WidgetPosicao{
+    @apply absolute bottom-4 right-4 md:bottom-10 md:right-10 right-5 flex flex-col items-end
+}
+
+.WidgetExpandir{
+    @apply bg-violet-500 rounded-full px-3 h-12 
+    text-white flex items-center
+}
+
+.WidgetRetrair{
+    @apply max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-700 ease-linear
+}
+
+.CloseWidget{
+    @apply top-5 right-5 absolute text-zinc-400 hover:text-zinc-100
+}
+
+.ScreenshotPosition{
+    @apply p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end
+    text-zinc-400 hover:text-zinc-100 transition
+}
+
+.ScreenshotLayout {
+    @apply p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 transition-colors
+    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-purple-500
+}
+
+.LoadingAnimation{
+    @apply w-6 h-6 flex items-center justify-center overflow-hidden animate-spin
+}
+
+.BoxSuccessFeedback{
+    @apply bg-zinc-900 p-4 relative rounded-2xl mb-4 flex-col items-center shadow-lg 
+    w-[calc(100vw-2rem)] md:w-auto
+}
+
+.Footer{
+    @apply text-xs text-neutral-400
+}
+
+.TiposFeedback{
+    @apply flex py-8 gap-2 w-full
+}
+
+.DeixarFeedback{
+    @apply text-xl leading-6
+}
+
+.BoxFeedbackTypes{
+    @apply bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex     flex-col items-center gap-2 border-2 border-transparent hover:border-b-purple-500 focus:border-b-purple-500 focus:outline-none
+}
+
+.LayoutSuccessFeedback{
+    @apply flex flex-col items-center py-10
+}
+
+.SendNewFeedback{
+    @apply py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 
+    transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900
+    focus:ring-purple-500 disabled:opacity-50 disabled:hover:bg-purple-500
+}
+
+.ArrowReturn{
+    @apply top-5 left-5 text-zinc-400 hover:text-zinc-100
+}
+
+.FeedbackContent{
+    @apply text-xl leading-6 flex items-center gap-2
+}
+
+.FeedbackText{
+    @apply min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 border-zinc-600 
+    bg-transparent rounded-md 
+}
+
+.FeedbackSend{
+    @apply p-2 bg-purple-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm
+    hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:hover:bg-purple-500
+}
+
