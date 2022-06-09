@@ -11,7 +11,7 @@ export function Widget(){
                 <WidgetForm/>    
             </Popover.Panel>
 
-            <Popover.Button className="WidgetExpandir group ">
+            <Popover.Button className="WidgetExpandir group">
                 <ChatTeardropDots className="w-6 h-6 "/>
 
                 <span className="WidgetRetrair">

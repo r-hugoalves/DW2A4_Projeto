@@ -35,8 +35,8 @@ export function ScreenshotButton({
                 onClick={() => onScreenshotTook(null)}
                 style={{
                     backgroundImage: `url(${screenshot})`,
-                    backgroundPosition: 'right bottom', 
-                    backgroundSize: 180,
+                    backgroundPosition: 'absolute',
+                    backgroundSize: 70,
                 }}
             >
                 <Trash />
