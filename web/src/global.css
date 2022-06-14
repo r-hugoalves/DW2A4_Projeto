@@ -13,7 +13,7 @@ body{
 }
 
 .WidgetExpandir{
-    @apply bg-violet-500 rounded-full px-3 h-12 
+    @apply bg-red-700 rounded-full px-3 h-12 
     text-white flex items-center
 }
 
@@ -31,8 +31,7 @@ body{
 }
 
 .ScreenshotLayout {
-    @apply p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700 transition-colors
-    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-purple-500
+    @apply p-2 bg-zinc-800 rounded-md border-transparent hover:bg-zinc-700
 }
 
 .LoadingAnimation{
@@ -57,7 +56,7 @@ body{
 }
 
 .BoxFeedbackTypes{
-    @apply bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-b-purple-500 focus:border-b-purple-500 focus:outline-none
+    @apply bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col items-center gap-2 border-2 border-transparent hover:border-b-red-600 focus:border-b-red-600 focus:outline-none
 }
 
 .LayoutSuccessFeedback{
@@ -66,8 +65,6 @@ body{
 
 .SendNewFeedback{
     @apply py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 
-    transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900
-    focus:ring-purple-500 disabled:opacity-50 disabled:hover:bg-purple-500
 }
 
 .ArrowReturn{
@@ -84,8 +81,8 @@ body{
 }
 
 .FeedbackSend{
-    @apply p-2 bg-purple-500 rounded-md border-transparent flex-1 flex justify-center items-center text-sm
-    hover:bg-purple-700 transition-colors disabled:opacity-50 disabled:hover:bg-purple-500
+    @apply p-2 bg-red-600 rounded-md border-transparent flex-1 flex justify-center items-center text-sm
+    hover:bg-red-700 transition-colors disabled:opacity-50 disabled:hover:bg-red-600
 }
 
 /* CSS DA BACKGROUND PAGE*/

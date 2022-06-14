@@ -66,7 +66,7 @@ async function handleSubmiFeedback(event:FormEvent){
 
             <form onSubmit={handleSubmiFeedback}className="my-4 w-full">
                 <textarea
-                    className="FeedbackText focus:border-b-purple-500 focus:ring-purple-500 focus:ring-1 resize-none
+                    className="FeedbackText focus:border-b-red-600 focus:ring-red-600 focus:ring-1 resize-none
                     focus: outline-none scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
 
                     /*O "focus" não é possível jogar em um arquivo só do global.css, pois o tailwind não suporta */
@@ -86,7 +86,7 @@ async function handleSubmiFeedback(event:FormEvent){
                         disabled={comment.length === 0 || isSendingFeedback}
                         type="submit"
                         className=" FeedbackSend focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900
-                        focus:ring-purple-500 "
+                        focus:ring-red-500 "
                     >
                         {isSendingFeedback ? <Loading/> : 'Enviar Feedback'}
                     </button>

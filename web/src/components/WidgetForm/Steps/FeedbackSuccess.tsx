@@ -23,7 +23,8 @@ export function FeedbackSucccessStep( {onFeedbackRestarRequested}: FeedbackSuccc
 
                 type="button"
                 onClick={onFeedbackRestarRequested}
-                className="SendNewFeedback">
+                className="SendNewFeedback transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900
+                focus:ring-red-600 disabled:opacity-50 disabled:hover:bg-red-600">
                     Quero enviar outro!
                 </button>
 
