@@ -22,8 +22,8 @@ export function ScreenshotButton({
         const canvas = await html2canvas(document.querySelector('html')!); 
         const base64image = canvas.toDataURL('image/png'); 
 
-        onScreenshotTook(base64image)
-        setIsTakingScreenshot(false)
+        onScreenshotTook(base64image);
+        setIsTakingScreenshot(false);
 
     }
 
@@ -35,13 +35,13 @@ export function ScreenshotButton({
                 onClick={() => onScreenshotTook(null)}
                 style={{
                     backgroundImage: `url(${screenshot})`,
-                    backgroundPosition: 'absolute',
-                    backgroundSize: 70,
+                    backgroundPosition: 'right bottom',
+                    backgroundSize: 80,
                 }}
             >
-                <Trash />
+                <Trash weight="fill"/>
             </button>
-        )
+        );
     }
 
     return(
@@ -52,5 +52,5 @@ export function ScreenshotButton({
         >
             {isTakingScreenshot ? <Loading/> : <Camera className="w-6 h-6"/>}
         </button>
-    )
+    );
 }
