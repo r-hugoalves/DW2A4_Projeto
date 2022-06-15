@@ -82,7 +82,7 @@ body{
 
 .FeedbackSend{
     @apply p-2 bg-red-600 rounded-md border-transparent flex-1 flex justify-center items-center text-sm
-    hover:bg-red-700 transition-colors disabled:opacity-50 disabled:hover:bg-red-600
+    hover:bg-red-700
 }
 
 /* CSS DA BACKGROUND PAGE*/
